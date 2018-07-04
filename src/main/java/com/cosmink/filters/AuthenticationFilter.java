@@ -1,9 +1,9 @@
 package com.cosmink.filters;
 
-import com.cosmink.models.AuthenticatedUserDetails.AuthenticatedUserDetails;
-import com.cosmink.models.AuthenticationTokenDetails.AuthenticationTokenDetails;
-import com.cosmink.models.User.User;
-import com.cosmink.models.User.UserDao;
+import com.cosmink.models.authenticatedUserDetails.AuthenticatedUserDetails;
+import com.cosmink.models.authenticationTokenDetails.AuthenticationTokenDetails;
+import com.cosmink.models.user.User;
+import com.cosmink.models.user.UserDao;
 import com.cosmink.services.security.AuthenticationTokenService;
 import com.cosmink.services.security.TokenBasedSecurityContext;
 
@@ -46,7 +46,7 @@ public class AuthenticationFilter implements ContainerRequestFilter {
 
     private void handleTokenBasedAuthentication(String authenticationToken, ContainerRequestContext requestContext) {
 
-        //FIXME: quando la getUsers() è annotata come @RolesAllowed({"ADMIN"}) ritorna errore perché non trova bene l'User
+        //FIXME: quando la getUsers() è annotata come @RolesAllowed({"ADMIN"}) ritorna errore perché non trova bene l'user
         //FIXME: infatti dà NullPointerException
 
         AuthenticationTokenDetails authenticationTokenDetails = authenticationTokenService.parseToken(authenticationToken);

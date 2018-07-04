@@ -1,4 +1,4 @@
-package com.cosmink.models.Authority;
+package com.cosmink.models.authority;
 
 public enum Authority {
     ADMIN, USER

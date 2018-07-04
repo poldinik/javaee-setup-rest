@@ -1,6 +1,6 @@
-package com.cosmink.models.AuthenticationTokenDetails;
+package com.cosmink.models.authenticationTokenDetails;
 
-import com.cosmink.models.Authority.Authority;
+import com.cosmink.models.authority.Authority;
 
 import java.time.ZonedDateTime;
 import java.util.Collections;

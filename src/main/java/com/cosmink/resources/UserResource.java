@@ -1,14 +1,11 @@
 package com.cosmink.resources;
 
-import com.cosmink.models.User.User;
-import com.cosmink.models.User.UserDao;
-import com.cosmink.services.security.AuthenticationTokenSettings;
+import com.cosmink.models.user.User;
+import com.cosmink.models.user.UserDao;
 
-import javax.annotation.security.PermitAll;
 import javax.annotation.security.RolesAllowed;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
-import javax.transaction.Transactional;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;

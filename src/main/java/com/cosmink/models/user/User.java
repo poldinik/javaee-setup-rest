@@ -1,8 +1,8 @@
-package com.cosmink.models.User;
+package com.cosmink.models.user;
 
-import com.cosmink.models.Authority.Authority;
+import com.cosmink.models.authority.Authority;
 import com.cosmink.models.BaseEntity;
-import com.cosmink.models.UserCredentials.UserCredentials;
+import com.cosmink.models.userCredentials.UserCredentials;
 
 import javax.persistence.*;
 import javax.xml.bind.annotation.XmlRootElement;

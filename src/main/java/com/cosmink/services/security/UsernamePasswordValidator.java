@@ -1,7 +1,7 @@
 package com.cosmink.services.security;
 
-import com.cosmink.models.User.User;
-import com.cosmink.models.User.UserDao;
+import com.cosmink.models.user.User;
+import com.cosmink.models.user.UserDao;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
@@ -20,12 +20,12 @@ public class UsernamePasswordValidator {
         User user = userDao.findByUsernameOrEmail(email);
 
         if (user == null) {
-            // User cannot be found with the given username/email
+            // user cannot be found with the given username/email
             throw new AuthenticationException("Bad credentials.");
         }
 
         /*if (!user.isActive()) {
-            // User is not active
+            // user is not active
             throw new AuthenticationException("The user is inactive.");
         }*/
 

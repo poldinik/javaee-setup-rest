@@ -1,4 +1,4 @@
-package com.cosmink.models.UserCredentials;
+package com.cosmink.models.userCredentials;
 
 import javax.persistence.Embeddable;
 

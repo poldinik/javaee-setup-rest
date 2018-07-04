@@ -1,11 +1,10 @@
 package com.cosmink.services.emails;
 
-import com.cosmink.models.Email.Email;
+import com.cosmink.models.email.Email;
 
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
-import javax.ws.rs.core.Configuration;
 import javax.ws.rs.core.Response;
 import java.util.Properties;
 

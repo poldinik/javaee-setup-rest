@@ -1,14 +1,13 @@
 package com.cosmink.resources;
 
-import com.cosmink.models.Authority.Authority;
-import com.cosmink.models.User.User;
-import com.cosmink.models.User.UserDao;
-import com.cosmink.models.User.UserFactory;
-import com.cosmink.models.UserCredentials.UserCredentials;
+import com.cosmink.models.authority.Authority;
+import com.cosmink.models.user.User;
+import com.cosmink.models.user.UserDao;
+import com.cosmink.models.user.UserFactory;
+import com.cosmink.models.userCredentials.UserCredentials;
 import com.cosmink.services.security.PasswordEncoder;
 
 import javax.annotation.security.PermitAll;
-import javax.annotation.security.RolesAllowed;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.transaction.Transactional;
@@ -46,7 +45,7 @@ public class RegisterResource {
         //simula registrazione di un utente ADMIN
         Set<Authority> authorities = new HashSet<>();
         authorities.add(Authority.ADMIN);
-        //authorities.add(Authority.USER);
+        //authorities.add(authority.USER);
         user.setAuthorities(authorities);
 
         Boolean created = userDao.create(user);

@@ -1,4 +1,4 @@
-package com.cosmink.models.User;
+package com.cosmink.models.user;
 
 import com.cosmink.models.CRUD;
 import com.cosmink.models.Dao;
@@ -7,7 +7,6 @@ import javax.persistence.EntityExistsException;
 import javax.persistence.PersistenceException;
 import javax.persistence.Query;
 import javax.persistence.TransactionRequiredException;
-import javax.transaction.Transactional;
 import java.util.List;
 
 public class UserDao extends Dao implements CRUD<User>{

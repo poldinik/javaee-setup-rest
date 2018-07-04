@@ -1,7 +1,7 @@
 package com.cosmink.services.security;
 
-import com.cosmink.models.AuthenticationTokenDetails.AuthenticationTokenDetails;
-import com.cosmink.models.Authority.Authority;
+import com.cosmink.models.authenticationTokenDetails.AuthenticationTokenDetails;
+import com.cosmink.models.authority.Authority;
 import io.jsonwebtoken.*;
 
 import javax.enterprise.context.Dependent;
@@ -83,7 +83,7 @@ class AuthenticationTokenParser {
      * Extract the user authorities from the token claims.
      *
      * @param claims
-     * @return User authorities from the JWT token
+     * @return user authorities from the JWT token
      */
     private Set<Authority> extractAuthoritiesFromClaims(@NotNull Claims claims) {
         List<String> rolesAsString = (List<String>) claims.getOrDefault(settings.getAuthoritiesClaimName(), new ArrayList<>());

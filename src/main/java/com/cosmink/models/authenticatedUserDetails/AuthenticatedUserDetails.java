@@ -1,6 +1,6 @@
-package com.cosmink.models.AuthenticatedUserDetails;
+package com.cosmink.models.authenticatedUserDetails;
 
-import com.cosmink.models.Authority.Authority;
+import com.cosmink.models.authority.Authority;
 
 import java.security.Principal;
 import java.util.Collections;
